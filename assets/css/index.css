@@ -1,0 +1,82 @@
+header {
+	font-family: 'Dosis', sans-serif;
+	color: rgb(255, 255, 255);
+}
+
+header li .nav-link {
+	font-family: 'Dosis', sans-serif;
+	color: rgb(255, 252, 252);
+}
+
+body {
+	font-family: 'Dosis', sans-serif;
+}
+
+
+#redesSociales {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+
+h5 .card-title {
+color: rgb(44, 34, 34, 0.800);
+}
+
+h6 {
+	color: rgb(44, 34, 34, 0.800);
+}
+
+div .card {
+	justify-content: center;
+	margin: auto 0;
+	display: absolute;
+}
+
+
+div .row {
+	background-color: rgb(44, 34, 34, 0.800);
+}
+
+section img {
+	height: 50px;
+	width: 50px;
+}
+
+.swiper {
+	width: 100%;
+	height: 100%;
+  }
+
+  .swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	background: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+
+  .swiper-slide img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+  }
+
+/* Media queries */
+
+@media (min-width: 320px) {
+#graficoUno, #graficoDos {
+	height: 180px; 
+	width: 100%
+}
+
+}
+
+@media (min-width: 768px) {
+}
+
+
+
+@media (min-width: 1024px) {
+}
