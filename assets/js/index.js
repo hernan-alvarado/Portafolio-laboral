@@ -1,80 +1,82 @@
 
+
 window.onload = function () {
-	let primerGrafico = {
+	CanvasJS.addColorSet("aprendizajeTecnologias",
+			[//colorSet Array
+			"#DCA978",
+			"#DCA978",
+			"#DCA978",
+			"#DCA978",
+			"#DCA978",
+			"silver",
+			"silver",
+			"silver",
+			"silver",
+			"gold",
+			"gold"
+			]);
+		
+/* agregar leyenda con color bronce a básico
+color plateado a intermedio
+color oro a avanzado */
+
+		let chart = new CanvasJS.Chart("graficoDos", {
+		colorSet: "aprendizajeTecnologias",
 		animationEnabled: false,
-		title: {
-			text: "Nivel de dominio de lenguajes de programación y software",
-			fontColor: "rgb(44, 34, 34, 0.800)",
+		backgroundColor: "#00356B",
+		legend:{
+			fontSize: "13",
+			fontColor: "#fffffe"
+		},
+		axisX: {
+			labelFontColor: "#fffffe",
+			labelFontFamily: "Inter Variable",
+
 		},
 		axisY: {
-			tickThickness: 0,
-			lineThickness: 0,
-			valueFormatString: " ",
-			includeZero: false,
-			gridThickness: 0,
+			lineThickness: 2,
+			includeZero: true,
+			gridThickness: 0,	
+			labelFormatter: function(e){
+				return  e.value + "%" ;
+			}	
 		},
 		data: [
 			{
+				axisXType: "primary", 
 				type: "bar",
-				indexLabelFontSize: 15,
-				toolTipContent: "{indexLabel}",
+				indexLabelPlacement: "inside",
+				indexLabelFontSize: 16,
+				indexLabelFontColor: "#fffffe",
 				dataPoints: [
-					{ y: 40, label: " ", indexLabel: "Git & GitHub" },
-					{ y: 40, label: " ", indexLabel: "SQL/Postgres" },
-					{ y: 45, label: " ", indexLabel: "Java Script" },
-					{ y: 60, label: " ", indexLabel: "HTML" },
-					{ y: 50, label: " ", indexLabel: "CSS" },
-				],
-			},
-		],
-	};
+					{ y: 35, label: "ExpressJS"},
+					{ y: 40, label: "Git"},
+					{ y: 40, label: "SQL/Postgres"},
+					{ y: 40, label: "NodeJS" },
+					{ y: 40, label: "HandlebarsJS"},
+					{ y: 50, label: "jQuery"},
+					{ y: 50, label: "CanvasJS"},
+					{ y: 50, label: "CSS"},
+					{ y: 60, label: "HTML"},
+					{ y: 70, label: "Bootstrap"},
+				]
+				
+			}
+		]
+	});
+	chart.render();
+}
 
-	$("#graficoUno").CanvasJSChart(primerGrafico);
-
-	let segundoGrafico = {
-		animationEnabled: false,
-		title: {
-			text: "Frameworks y librerías",
-			fontColor: "rgb(44, 34, 34, 0.800)",
-		},
-		axisY: {
-			tickThickness: 0,
-			lineThickness: 0,
-			valueFormatString: " ",
-			includeZero: false,
-			gridThickness: 0,
-		},
-		data: [
-			{
-				type: "bar",
-				indexLabelFontSize: 15,
-				toolTipContent: "{indexLabel}",
-				dataPoints: [
-					{ y: 35, label: " ", indexLabel: "ExpressJS" },
-					{ y: 40, label: " ", indexLabel: "NodeJS" },
-					{ y: 40, label: " ", indexLabel: "HandlebarsJS" },
-					{ y: 40, label: " ", indexLabel: "jQuery UI" },
-					{ y: 50, label: " ", indexLabel: "jQuery" },
-					{ y: 50, label: " ", indexLabel: "CanvasJS" },
-					{ y: 70, label: " ", indexLabel: "Bootstrap" },
-				],
-			},
-		],
-	};
-
-	$("#graficoDos").CanvasJSChart(segundoGrafico);
-};
-
-
-const swiper = new Swiper(".mySwiper", {
-	cssMode: true,
-	navigation: {
-	  nextEl: ".swiper-button-next",
-	  prevEl: ".swiper-button-prev",
+const swiper = new Swiper(".swiper", {
+	autoplay: {
+		delay: 4000,
+	  },
+	effect: 'fade',
+	fadeEffect: {
+	  crossFade: true
 	},
-	pagination: {
-	  el: ".swiper-pagination",
-	},
-	mousewheel: true,
-	keyboard: true,
-  });
+});
+
+
+
+
