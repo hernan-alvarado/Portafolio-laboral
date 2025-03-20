@@ -4,8 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script type="text/javascript" src="https://cdn.canvasjs.com/jquery.canvasjs.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="/assets/css/index.css" />
@@ -16,7 +15,7 @@
 
 <body>
     <main>
-        <nav class="navbar sticky-top" style="background-color: #070c19">
+        <nav class="navbar sticky-top" style="background-color: #192a53">
             <div class="container-fluid text-center">
                 <nav class="navbar-brand" style="color: #ffffff">
                     <h4>Hernán Alvarado Soto-Aguilar</h4>
@@ -42,9 +41,19 @@
                                 </a>
                                 <a class="nav-link" href="#certificaciones">
                                     <h4>Certificaciones</h4>
-                                </a>     
+                                </a>  
+                                <hr>
+                                <a title="WhatsApp" href="https://api.whatsapp.com/send?phone=56993510622" target="_blank"><img
+                                    src="/assets/img/icons/whatsapp-brands.svg" target="_blank" alt="LogoWhatsApp" style="height: 40px; width: 40px;"
+                                    ></a>
+                              
+                              <a title="Linkedin" href="https://www.linkedin.com/in/hernan-alvarado/" target="_blank"><img
+                                src="/assets/img/icons/linkedin-brands.svg" alt="LogoLinkedin" style="height: 40px; width: 40px;"></a>
+                              
+                               <a title="GitHub" href="https://github.com/hernan-alvarado" target="_blank"><img
+                                    src="/assets/img/icons/github-brands.svg" target="_blank" alt="LogoGitHub" style="height: 40px; width: 40px;"></a>   
                             </li>
-                            <hr>
+
                         </ul>
                     </div>
 
@@ -57,33 +66,14 @@
             <h1>Bienvenidas y bienvenidos a mi portafolio</h1>
             </p>
             <div class="image-content">
-                <div class="card-image text-center">
+                <div class="card-image text-center mt-4">
                     <img src="/assets/img/03.2025(2).jpg" class="card-body" height="350px" width="350px"
                         alt="fotodeperfil">
                 </div>
             </div>
-            <p>
-            <h1>Mi nombre es Hernán Alvarado</p> y soy <b>Desarrollador <em>Front-End</em></b>.</h1>
-            </p>
         </div>
 
 
-        <div class="container text-center mt-5" id="tecnologias">
-          
-            <h3>Tecnologías
-            </h3>
-
-            <!-- 	ExpressJS
-					GitHub
-					SQL/Postgres
-					NodeJS
-					Handlebars
-					jQuery
-					CSS
-					HTML
-					Bootstrap
-        -->
-  
 
             <div class="container text-center mt-5 mb-2 id="proyectos">
                 <h3>Proyectos
@@ -136,10 +126,23 @@
                     </div>
                 </div>
             </div>
-            </div>
 
-
-                <div class="swiper mySwiper container-fluid text-center mt-3" id="certificaciones">
+            <div class="container text-center mt-5" id="tecnologias">
+                <h3>Tecnologías</h3>
+        
+                    <!-- 	ExpressJS
+                            GitHub
+                            SQL/Postgres
+                            NodeJS
+                            Handlebars
+                            jQuery
+                            CSS
+                            HTML
+                            Bootstrap
+                -->
+                </div>
+           
+                <div class="swiper mySwiper container-fluid text-center mt-3 mb-5" id="certificaciones">
                   
                     <h3>Certificaciones</h3>
                     
@@ -202,26 +205,62 @@
                 </div>
           
 
-    
-    
-    <footer class="container-fluid text-center mt-5">
-        <h4 class="mt-1">Contacto</h4>
-        <h5 class="mt-1">Correo electrónico</h5>
-        <h5>hernanalvarado.it@gmail.com</h5>
-        <h5 class="mt-1">Celular</h5>
-        <h5>+569 93510622</h5>
 
-        <div class="row-cols-3 mt-3">
-            <a title="WhatsApp" href="https://api.whatsapp.com/send?phone=56993510622" target="_blank"><img
-                    src="/assets/img/icons/whatsapp-brands.svg" target="_blank" alt="LogoWhatsApp"
-                    id="whatsapp" /></a>
-            <a title="Linkedin" href="https://www.linkedin.com/in/hernan-alvarado/" target="_blank"><img
+
+    <footer class="footer mt-5">
+        
+        <div class="container mt-3">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="row mt-5">
+                        <div class="col-6">
+                            <ul class="list-unstyled">
+                                <li><a href="/index.html#proyectos"><h5>Proyectos</h5></a></li>
+                                <li><a href="/index.html#tecnologias"><h5>Tecnologías</h5></a></li>
+                                <li><a href="/index.html#certificaciones"><h5>Certificaciones</h5></a></li>
+                                <li><a href="/index.html#curriculum"><h5>Currículum Vitae</h5></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                
+                    <br>
+                </div>
+                <div class="col-md-2">
+                    <h5 class="text-md-right mt-5">Hablemos de tus ideas</h5>
+                </div>
+                <div class="col-md-5 mt-5">
+                    <form>
+                        <fieldset class="form-group">
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                        </fieldset>
+                        <fieldset class="form-group mt-2">
+                            <textarea class="form-control" id="exampleMessage" placeholder="Message"></textarea>
+                        </fieldset>
+                        <fieldset class="form-group text-xs-right">
+                            <button type="button" class="btn btn-secondary-outline btn-lg">Send</button>
+                        </fieldset>
+                    </form>
+                </div>
+                <div class="container-fluid">
+                    <a title="WhatsApp" href="https://api.whatsapp.com/send?phone=56993510622" target="_blank"><img
+                        src="/assets/img/icons/whatsapp-brands.svg" target="_blank" alt="LogoWhatsApp" id="whatsapp" /></a>
+                  
+                  <a title="Linkedin" href="https://www.linkedin.com/in/hernan-alvarado/" target="_blank"><img
                     src="/assets/img/icons/linkedin-brands.svg" alt="LogoLinkedin" id="linkedin" /></a>
-            <a title="GitHub" href="https://github.com/hernan-alvarado" target="_blank"><img
-                    src="/assets/img/icons/github-brands.svg" target="_blank" alt="LogoGitHub" id="github" /></a>
+                  
+                   <a title="GitHub" href="https://github.com/hernan-alvarado" target="_blank"><img
+                        src="/assets/img/icons/github-brands.svg" target="_blank" alt="LogoGitHub" id="github" /></a>
+                </div>
+            </div>
         </div>
-        <h6 class="mt-2">Todos los derechos reservados | Hernán Alvarado ®</h6>
+
+      <hr>
+      <div class= "container-fluid text-center">
+      <h6 class="text">Todos los derechos reservados | Hernán Alvarado ® 2025</h6>
+
+    </div>
     </footer>
+
 </body>
 </main>
 

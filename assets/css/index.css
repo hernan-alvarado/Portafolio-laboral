@@ -23,7 +23,7 @@ a h4 {
 
 div .offcanvas {
 	color: #ffffff;
-	background-color: #070c19;
+	background-color: #192a53;
 }
 
 
@@ -37,13 +37,8 @@ div .offcanvas {
 }
 
 ul {
-	color: #fffffe
+	color: #ffffff
 }
-
-
-
-
-
 
 div .row {
 	display: flex;
@@ -53,7 +48,7 @@ div .row {
 }
 
 div .card-body {
-	color: #fffffe;
+	color: #ffffff;
 }
 
 
@@ -65,7 +60,7 @@ div .card {
 
 
 div .card-title {
-	color: #fffffe;
+	color: #ffffff;
 	text-align: center;
 }
 
@@ -73,13 +68,16 @@ div .card-title {
 	color: #ffffff;
 }
 
+
+
 /*código HEX color logos #62ECbc*/
 
 #whatsapp,
 #linkedin,
 #github {
-	height: 48px;
-	width: 48px;
+	height: 50px;
+	width: 50px;
+	color: #192a53;
 }
 
 footer {
