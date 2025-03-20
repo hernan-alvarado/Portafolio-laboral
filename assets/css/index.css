@@ -9,38 +9,22 @@
 }
 
 
-main {
-	color: #fffffe;
-	background-color: #00356B;
+
+main  {
+	color: #ffffff;
+	background-color: #070c19;
 }
 
-nav .navbar {
-	color: #fffffe;
+
+a h4 {
+	color: #ffffff;
 }
 
-.nav-link h5 {
-	color: #fffffe;
-}
 
-nav .navbar-brand {
-	color: #fffffe;
+div .offcanvas {
+	color: #ffffff;
+	background-color: #070c19;
 }
-
-nav .navbar-toggler {
-	border-color: #141618;
-	color: #000000;
-}
-
-div .offcanvas-header {
-	background-color: #002244;
-	color: #fffffe;
-}
-
-div .offcanvas-body {
-	color: #fffffe;
-	background-color: #002244;
-}
-
 
 
 .card-image .card-img {
@@ -48,13 +32,17 @@ div .offcanvas-body {
 	max-width: 200px;
 	object-fit: fill;
 	border-radius: 60%;
-	background-color: #002244;
+	background-color: #070c19;
 
 }
 
 ul {
 	color: #fffffe
 }
+
+
+
+
 
 
 div .row {
@@ -70,16 +58,9 @@ div .card-body {
 
 
 div .card {
-	background-color:#00356B;
+	background-color: #070c19;
 	border-color: #ffffff;
 
-}
-
-button  {
-	background: #002244;
-	& a {
-	color: #fffffe;
-}
 }
 
 
@@ -88,37 +69,41 @@ div .card-title {
 	text-align: center;
 }
 
-footer {
-	background-color: #002244;
-	color: #fffffe;
-
+.card-link {
+	color: #ffffff;
 }
-
 
 /*código HEX color logos #62ECbc*/
 
-#whatsapp, #linkedin, #github {
+#whatsapp,
+#linkedin,
+#github {
 	height: 48px;
 	width: 48px;
+}
+
+footer {
+	background-color: #181717;
+	color: #ffffff;
 }
 
 /* Media queries */
 
 @media only screen and (min-width: 320px) and (max-width: 800px) {
-	.swiper-slide { & img {
-		height: 300px;
-		width: 350px;
-		justify-content: center;
+	.swiper-slide {
+		& img {
+			height: 300px;
+			width: 350px;
+			justify-content: center;
+		}
+
+		& h5 {
+			margin-top: 4%;
+		}
 	}
-	& h5 {
-	margin-top: 4%;
-	}
-}
-	.graficoUno,
-	.graficoDos {
-		height: 200px;
-		width: 200px;
-	}
+
+
+
 
 	.card-img-top {
 		margin-top: 5%;
@@ -131,22 +116,20 @@ footer {
 
 @media only screen and (min-width: 801px) and (max-width: 1440px) {
 
-	.swiper-slide { & img {
-		height: 400px;
-		width: 450px;
-		justify-content: center;
-		object-fit: contain;
-	}
-	& h5 {
-		margin-top: 4%;
+	.swiper-slide {
+		& img {
+			height: 400px;
+			width: 450px;
+			justify-content: center;
+			object-fit: contain;
 		}
-	}		
 
-	.graficoUno,
-	.graficoDos {
-		height: 400px;
-		width: 400px;
+		& h5 {
+			margin-top: 4%;
+		}
 	}
+
+
 
 	.card-img-top {
 		margin-top: 5%;
