@@ -1,32 +1,3 @@
-
-document.addEventListener('DOMContentLoaded', function() {
-    const text = "¡Hola! Soy Hernán Alvarado.//Desarrollador FullStack JavaScript//Especializado en aplicaciones modernas//+2 años de experiencia"; 
-    const element = document.getElementById('typewriter');
-    const phrases = text.split('//');
-    let i = 0;
-    let j = 0;
-    let currentPhrase = [];
-    
-    function typeWriter() {
-        if (i < phrases.length) {
-            if (j < phrases[i].length) {
-                currentPhrase.push(phrases[i][j]);
-                element.innerHTML = currentPhrase.join('') + '<span class="cursor">|</span>';
-                j++;
-                setTimeout(typeWriter, 50);
-            } else {
-                currentPhrase = [];
-                element.innerHTML += '<br><br>';
-                i++;
-                j = 0;
-                setTimeout(typeWriter, 1000);
-            }
-        }
-    }
-    
-    typeWriter();
-});
-
 const proyectosSwiper = new Swiper(".proyectosSwiper", {
     slidesPerView: 'auto',
     centeredSlides: true,
